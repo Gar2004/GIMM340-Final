@@ -1,0 +1,163 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "Start_Argument_Detector",
+          "samples": [
+            "Start fallacy detection training",
+            "Start argument detector"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "Fallacy_Summary",
+          "samples": [
+            "Yes I would like to learn argument fallacies. ",
+            "Yes"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "topic",
+              "type": "topics"
+            }
+          ],
+          "name": "PickArticle",
+          "samples": [
+            "Pull up an article covering {topic}",
+            "Send me an article covering {topic}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Moral Equivalence"
+              }
+            },
+            {
+              "name": {
+                "value": "Straw Man"
+              }
+            },
+            {
+              "name": {
+                "value": "Red Herring"
+              }
+            },
+            {
+              "name": {
+                "value": "Ad populum"
+              }
+            },
+            {
+              "name": {
+                "value": "Ad hominem"
+              }
+            },
+            {
+              "name": {
+                "value": "Either/or"
+              }
+            },
+            {
+              "name": {
+                "value": "Circular Argument"
+              }
+            },
+            {
+              "name": {
+                "value": "Begging the Claim"
+              }
+            },
+            {
+              "name": {
+                "value": "Genetic Fallacy"
+              }
+            },
+            {
+              "name": {
+                "value": "Post hoc ergo propter hoc"
+              }
+            },
+            {
+              "name": {
+                "value": "Hasty Generalization"
+              }
+            },
+            {
+              "name": {
+                "value": "Slippery Slope"
+              }
+            }
+          ],
+          "name": "terms"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Business"
+              }
+            },
+            {
+              "name": {
+                "value": "World Events"
+              }
+            },
+            {
+              "name": {
+                "value": "Social Media"
+              }
+            },
+            {
+              "name": {
+                "value": "American Politics"
+              }
+            }
+          ],
+          "name": "topics"
+        }
+      ],
+      "invocationName": "argument detector"
+    }
+  }
+}
